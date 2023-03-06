@@ -76,13 +76,13 @@ public void displayLosingMessage()
 
 public void displayWinningMessage()
 {
-  buttons[9][6].setLabel("w");
-  buttons[9][7].setLabel("i");
-  buttons[9][8].setLabel("n");
+  buttons[9][6].setLabel("!");
+  buttons[9][7].setLabel("w");
+  buttons[9][8].setLabel("i");
   buttons[9][9].setLabel("n");
-  buttons[9][10].setLabel("e");
-  buttons[9][11].setLabel("r");
-  buttons[9][12].setLabel("!");
+  buttons[9][10].setLabel("n");
+  buttons[9][11].setLabel("e");
+  buttons[9][12].setLabel("r");
   buttons[9][13].setLabel("!");
 }
 
