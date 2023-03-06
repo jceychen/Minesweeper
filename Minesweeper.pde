@@ -129,7 +129,7 @@ public class MSButton
   {
     clicked = true;
     if (keyPressed == true) {
-      flagged=!flagged;
+      flagged =! flagged;
       clicked = false;
     } else if (mines.contains(this)) {
       displayLosingMessage();
