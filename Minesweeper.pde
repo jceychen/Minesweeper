@@ -83,6 +83,7 @@ public void displayWinningMessage()
   buttons[9][10].setLabel("e");
   buttons[9][11].setLabel("r");
   buttons[9][12].setLabel("!");
+  buttons[9][13].setLabel("!");
 }
 
 public boolean isValid(int r, int c)
