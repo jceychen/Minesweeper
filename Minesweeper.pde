@@ -96,8 +96,8 @@ public boolean isValid(int r, int c)
 public int countMines(int row, int col)
 {
   int numMines = 0;
-  for (int i = row-1; i < row+2; i++) {
-    for (int j = col-1; j < col+2; j++) {
+  for (int i = row-1; i <= row+1; i++) {
+    for (int j = col-1; j < col+1; j++) {
       if (isValid(i, j) && mines.contains(buttons[i][j])) {
         numMines++;
       }
@@ -137,10 +137,10 @@ public class MSButton
     } else if (countMines(myRow, myCol) > 0) {
       setLabel(str(countMines(myRow, myCol)));
     } else {
-      for (int row = myRow-1; row < myRow+2; row++) {
-        for (int col = myCol-1; col < myCol+2; col++) {
-          if (isValid(row, col) && !buttons[row][col].clicked == true) {
-            buttons[row][col].mousePressed();
+      for (int r = myRow-1; r <= myRow+1; r++) {
+        for (int c = myCol-1; c <= myCol+1; c++) {
+          if (isValid(r, c) && !buttons[r][c].clicked == true) {
+            buttons[r][c].mousePressed();
           }
         }
       }
