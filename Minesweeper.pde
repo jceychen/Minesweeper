@@ -66,6 +66,7 @@ public void displayLosingMessage()
         buttons[9][7].setLabel("i");
         buttons[9][8].setLabel("c");
         buttons[9][9].setLabel("e");
+        buttons[9][10].setLabel("");
         buttons[9][11].setLabel("t");
         buttons[9][12].setLabel("r");
         buttons[9][13].setLabel("y");
