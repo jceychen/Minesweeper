@@ -59,7 +59,7 @@ public void displayLosingMessage()
 {
   for (int r = 0; r < NUM_ROWS; r++) {
     for (int c = 0; c < NUM_COLS; c++) {
-      if (!buttons[r][c].clicked == true && mines.contains(buttons[r][c])) {
+      if (!buttons[r][c].clicked && mines.contains(buttons[r][c])) {
         buttons[r][c].mousePressed();
         buttons[9][6].setLabel("n");
         buttons[9][7].setLabel("i");
